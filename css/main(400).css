@@ -1,0 +1,48 @@
+/* HEADER */
+#header_top, #header_bottom, #header_booking{
+    display: none;
+}
+
+#header_400{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#header_400>a{
+    width: auto;
+    height: 50px;
+}
+
+#header_400>a img{
+    width: auto;
+    height: 50px;
+}
+
+#header_400 .list_btn{
+    width: 35px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header_400 .list_btn div{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,1 +1,74 @@
-#header{}
+/* HEADER */
+#header_top .info_box{
+    top: 10px;
+}
+
+
+#header_btm_in{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* MAIN */
+#booking_area{
+    width: 800px;
+}
+
+#booking_area li{
+    width: 14.2%;
+}
+
+
+
+
+
+
+
+
+
+/* SPECIAL OFFER */
+#special_offer .img_box{
+    width: 95%;
+}
+
+
+
+
+
+
+
+/* DINING */
+#dining .img_box{
+    width: 95%;
+}
+
+
+
+
+
+/* ROOMS */
+#rooms_in{
+    width: 100%;
+}
+
+
+#rooms_in .left_box{
+    width: 75%;
+    padding-left: 20px;
+}
+
+#rooms_in .room_info{
+    flex-direction: column;
+    align-items: unset;
+}
+
+#rooms_in .room_info img{
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
