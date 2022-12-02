@@ -41,8 +41,47 @@
 
 
 
+/* MAIN */
+#main_logo{
+    width: 100%;
+}
 
+#main_logo img{
+    width: 100%;
+}
 
+#booking_area{
+    display: none;
+}
+
+#booking_area_400{
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    height: 200px;
+}
+
+#booking_area_400 div{
+    float: left;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#booking_area_400 .top{
+    width: 50%;
+    background-color: aqua;
+}
+
+#booking_area_400 .middle{
+    width: 33.3%;
+    background-color: violet;
+}
+
+#booking_area_400 .bottom{
+    width: 100%;
+    background-color: tomato;
+}
 
 
 
