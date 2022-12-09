@@ -161,7 +161,7 @@
 }
 
 
-#header_400{
+#header_640{
     display: none;
 }
 
@@ -300,9 +300,6 @@
     color: #fff;
 }
 
-#booking_area_400{
-    display: none;
-}
 
 
 
@@ -427,7 +424,13 @@
     border-radius: 10px;
 }
 
+#special_offer .img_box_640{
+    display: none;
+}
 
+#special_offer .text_box_640{
+    display: none;
+}
 
 
 

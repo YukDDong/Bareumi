@@ -1,0 +1,52 @@
+/* MAIN */
+#booking_area{
+    width: 90%;
+}
+
+#booking_area li{
+    width: 14.2%;
+}
+
+
+
+
+
+/* SPECIAL OFFER */
+#special_offer .img_box{
+    width: 90%;
+}
+
+
+
+
+/* DINING */
+#dining .img_box{
+    width: 90%;
+}
+
+
+
+
+
+/* ROOMS */
+#rooms_in{
+    width: 90%;
+}
+
+#rooms_in .left_box{
+    width: 75%;
+    padding-left: 20px;
+}
+
+#rooms_in .room_info{
+    flex-direction: column;
+    align-items: unset;
+}
+
+#rooms_in .room_info img{
+    width: 600px;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+
