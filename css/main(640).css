@@ -133,7 +133,6 @@
     top: 50%;
     width: 15px;
     height: 15px;
-    background-color: turquoise;
 }
 
 #special_offer .img_box_640 .right_btn{
@@ -142,7 +141,6 @@
     top: 50%;
     width: 15px;
     height: 15px;
-    background-color: turquoise;
 }
 
 
@@ -202,4 +200,263 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+/* DINING */
+#dining{
+    height: 125vw;
+    position: relative;
+}
+
+#dining .img_box{
+    display: none;
+}
+
+#dining .img_box_640{
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#dining .img_box_640 .left_btn{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+#dining .img_box_640 .right_btn{
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+
+#dining .img_box_640 .img_no2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 90%;
+    overflow: hidden;
+}
+
+#dining .img_box_640 .img_no1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    width: 20%;
+    height: 30%;
+    overflow: hidden;
+}
+
+#dining .img_box_640 .img_no3{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(60%, -50%);
+    width: 20%;
+    height: 30%;
+    overflow: hidden;
+}
+
+#dining .img_box_640 div>img{
+    height: 100%;
+}
+
+#dining .text_box_640{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    background-color: #393939;
+    
+}
+
+#dining .text_box_640 p{
+    font-size: 3vw;
+    color: #fff;
+    line-height: 4.6vw;
+}
+
+
+
+
+
+
+
+
+
+/* ROOMS */
+#rooms{
+    background-position: 80% 0;
+}
+
+#rooms_in{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#rooms_in .left_box{
+    float: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px 20px 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+#rooms_in .room_info{
+    align-items: center;
+}
+
+#rooms_in .room_info img{
+    width: 100%;
+}
+
+#rooms_in .room_info>div{
+    align-self: flex-start;
+}
+
+#rooms_in .right_box{
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+}
+
+#rooms_in .right_box ul{
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#rooms_in .right_box ul li{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+#footer{
+    height: auto;
+}
+
+#footer_logo_box{
+    display: none;
+}
+
+#footer_bottom{
+    height: auto;
+}
+
+#footer_bottom .footer_up{
+    position: relative;
+    height: 35px;
+    display: block;
+    overflow: hidden;
+}
+
+#footer_bottom .info{
+    position: absolute;
+    width: 200%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+#footer_bottom .info li{
+}
+
+#footer_bottom .sns_box{
+    display: none;
+}
+
+#footer_bottom .footer_down{
+    position: relative;
+    height: 150px;
+    padding-top: 20px;
+    display: block;
+}
+
+#footer_bottom .footer_down span:first-child{
+    display: block;
+}
+
+#footer_bottom .footer_down select{
+    margin-top: 30px;
+}
+
+#footer_bottom .sns_box_640{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    display: block;
+}
+
+#booking_640{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+#booking_640 div{
+    width: 50%;
+    height: 125px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 60px;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#booking_640 div img{
+    width: 50px;
+}
+
+#booking_640 .rooms_bk{
+    background-color: #F1BC87;
+}
+
+#booking_640 .banquet_bk{
+    background-color: #828282;
+}
 
