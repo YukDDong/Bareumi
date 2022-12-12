@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" media="screen and (max-width : 1300px)" href="./css/main(1300).css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width : 1000px)" href="./css/main(1000).css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width : 640px)" href="./css/main(640).css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+
     
 </head>
 <body>
@@ -34,14 +37,52 @@
                 </div>
             </div>
             <div id="header_bottom">
-                <ul id="header_btm_in">
-                    <li><a href="#">SPECIAL OFFER</a></li>
-                    <li><a href="#">ROOMS</a></li>
-                    <li><a href="#">DINING</a></li>
-                    <li><a href="#">BANQUET</a></li>
-                    <li><a href="#">FACILITY</a></li>
-                    <li><a href="#">CUSTOMER</a></li>
-                </ul>
+                <nav>
+                    <ul id="header_btm_in">
+                        <li><a href="#">SPECIAL OFFER</a></li>
+                        <li><a href="#">ROOMS</a></li>
+                        <li><a href="#">DINING</a></li>
+                        <li><a href="#">BANQUET</a></li>
+                        <li><a href="#">FACILITY</a></li>
+                        <li><a href="#">CUSTOMER</a></li>
+                    </ul>
+                </nav>
+                <div class="nav_menu">
+                    <div class="nav_menu_in">
+                        <ul>
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">패키지</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">부띠끄</a></li>
+                            <li><a href="">본관</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">더뷔페</a></li>
+                            <li><a href="">로비라운지</a></li>
+                            <li><a href="">카페</a></li>
+                            <li><a href="">편의점</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">컨벤션</a></li>
+                            <li><a href="">즐거운홀</a></li>
+                            <li><a href="">행복한홀</a></li>
+                            <li><a href="">레이디스</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">갤러리</a></li>
+                            <li><a href="">한복점</a></li>
+                            <li><a href="">카지노</a></li>
+                            <li><a href="">기타</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">연락처안내</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">고객문의</a></li>
+                            <li><a href="">객실상담</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div id="header_booking">
                 <div class="rooms_bk"><img src="./images/logo_calendar.png" alt="logo_calendar">객실예약</div>
@@ -105,19 +146,38 @@
                 <li>이벤트</li>
                 <li>패키지</li>
             </ul>
-            <div class="img_box">
-                <div class="img_left"></div>
-                <div class="box_right">
-                    <div class="img_top"></div>
-                    <div class="box_bottom">
-                        <div class="img_btm_left"></div>
-                        <div class="box_btm_right">
-                            <p>
-                                호텔 인터불고 대구의<br>
-                                다양한 이벤트와 패키지를<br>
-                                만나보세요!
-                            </p>
-                            <a href="#" class="plus_btn">더보기</a>
+            <div class="img_box_total">
+                <div class="img_box no1">
+                    <div class="img_left"></div>
+                    <div class="box_right">
+                        <div class="img_top"></div>
+                        <div class="box_bottom">
+                            <div class="img_btm_left"></div>
+                            <div class="box_btm_right">
+                                <p>
+                                    호텔 인터불고 대구의<br>
+                                    다양한 이벤트와 패키지를<br>
+                                    만나보세요!
+                                </p>
+                                <a href="#" class="plus_btn">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_box no2">
+                    <div class="img_left"></div>
+                    <div class="box_right">
+                        <div class="img_top"></div>
+                        <div class="box_bottom">
+                            <div class="img_btm_left"></div>
+                            <div class="box_btm_right">
+                                <p>
+                                    호텔 인터불고 대구의<br>
+                                    다양한 이벤트와 패키지를<br>
+                                    만나보세요!
+                                </p>
+                                <a href="#" class="plus_btn">더보기</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -154,22 +214,75 @@
                 <li>카페</li>
                 <li>편의점</li>
             </ul>
-            <div class="img_box">
-                <div class="box_left">
-                    <div class="img_top"></div>
-                    <div class="box_bottom">
-                        <div class="img_btm_left"></div>
-                        <div class="box_btm_right">
-                            <p>
-                                호텔 인터불고 대구의<br>
-                                고급스러운 다이닝으로<br>
-                                여러분을 모십니다!
-                            </p>
-                            <a href="" class="plus_btn">더보기</a>
+            <div class="img_box_total">
+                <div class="img_box no1">
+                    <div class="box_left">
+                        <div class="img_top"></div>
+                        <div class="box_bottom">
+                            <div class="img_btm_left"></div>
+                            <div class="box_btm_right">
+                                <p>
+                                    호텔 인터불고 대구의<br>
+                                    고급스러운 다이닝으로<br>
+                                    여러분을 모십니다!
+                                </p>
+                                <a href="" class="plus_btn">더보기</a>
+                            </div>
                         </div>
                     </div>
+                    <div class="img_right"></div>
                 </div>
-                <div class="img_right"></div>
+                <div class="img_box no2">
+                    <div class="box_left">
+                        <div class="img_top"></div>
+                        <div class="box_bottom">
+                            <div class="img_btm_left"></div>
+                            <div class="box_btm_right">
+                                <p>
+                                    호텔 인터불고 대구의<br>
+                                    고급스러운 다이닝으로<br>
+                                    여러분을 모십니다!
+                                </p>
+                                <a href="" class="plus_btn">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_right"></div>
+                </div>
+                <div class="img_box no3">
+                    <div class="box_left">
+                        <div class="img_top"></div>
+                        <div class="box_bottom">
+                            <div class="img_btm_left"></div>
+                            <div class="box_btm_right">
+                                <p>
+                                    호텔 인터불고 대구의<br>
+                                    고급스러운 다이닝으로<br>
+                                    여러분을 모십니다!
+                                </p>
+                                <a href="" class="plus_btn">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_right"></div>
+                </div>
+                <div class="img_box no4">
+                    <div class="box_left">
+                        <div class="img_top"></div>
+                        <div class="box_bottom">
+                            <div class="img_btm_left"></div>
+                            <div class="box_btm_right">
+                                <p>
+                                    호텔 인터불고 대구의<br>
+                                    고급스러운 다이닝으로<br>
+                                    여러분을 모십니다!
+                                </p>
+                                <a href="" class="plus_btn">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_right"></div>
+                </div>
             </div>
             <div class="img_box_640">
                 <div class="left_btn">L</div>
@@ -210,52 +323,52 @@
                         </div>
                     </div>
                     <div class="room_info superial">
-                        <img src="./images/rooms_normal.png" alt="rooms_superial">
+                        <img src="./images/rooms_superial.png" alt="rooms_superial">
                         <div>
                             <h5>Superial</h5>
                             <p>
                                 화사한 실내 디자인과 유비쿼터스 홈스테이워크 등<br>
-                                첨단 시스템을 갖춘 고품격 노멀룸을 만나보세요.
+                                첨단 시스템을 갖춘 고품격 슈페리얼룸을 만나보세요.
                             </p>
                         </div>
                     </div>
                     <div class="room_info deluxe">
-                        <img src="./images/rooms_normal.png" alt="rooms_deluxe">
+                        <img src="./images/rooms_deluxe.png" alt="rooms_deluxe">
                         <div>
                             <h5>Deluxe</h5>
                             <p>
                                 화사한 실내 디자인과 유비쿼터스 홈스테이워크 등<br>
-                                첨단 시스템을 갖춘 고품격 노멀룸을 만나보세요.
+                                첨단 시스템을 갖춘 고품격 디럭스룸을 만나보세요.
                             </p>
                         </div>
                     </div>
                     <div class="room_info premium">
-                        <img src="./images/rooms_normal.png" alt="rooms_premium">
+                        <img src="./images/rooms_premium.png" alt="rooms_premium">
                         <div>
                             <h5>Premium</h5>
                             <p>
                                 화사한 실내 디자인과 유비쿼터스 홈스테이워크 등<br>
-                                첨단 시스템을 갖춘 고품격 노멀룸을 만나보세요.
+                                첨단 시스템을 갖춘 고품격 프리미엄룸을 만나보세요.
                             </p>
                         </div>
                     </div>
                     <div class="room_info luxury">
-                        <img src="./images/rooms_normal.png" alt="rooms_luxury">
+                        <img src="./images/rooms_luxury.png" alt="rooms_luxury">
                         <div>
                             <h5>Luxury</h5>
                             <p>
                                 화사한 실내 디자인과 유비쿼터스 홈스테이워크 등<br>
-                                첨단 시스템을 갖춘 고품격 노멀룸을 만나보세요.
+                                첨단 시스템을 갖춘 고품격 럭셔리룸을 만나보세요.
                             </p>
                         </div>
                     </div>
                     <div class="room_info royal">
-                        <img src="./images/rooms_normal.png" alt="rooms_royal">
+                        <img src="./images/rooms_royal.png" alt="rooms_royal">
                         <div>
                             <h5>Royal</h5>
                             <p>
                                 화사한 실내 디자인과 유비쿼터스 홈스테이워크 등<br>
-                                첨단 시스템을 갖춘 고품격 노멀룸을 만나보세요.
+                                첨단 시스템을 갖춘 고품격 로얄룸을 만나보세요.
                             </p>
                         </div>
                     </div>

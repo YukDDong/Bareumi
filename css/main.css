@@ -19,6 +19,10 @@
     background-color: rgba(161, 161, 161, 0.5);
 }
 
+#header.on{
+    background-color: #fff;
+}
+
 #header_top{
     position: relative;
     width: 100%;
@@ -99,7 +103,16 @@
 
 #header_bottom{
     width: 100%;
-    height: 50px;
+    height: auto;
+}
+
+#header_bottom nav{
+    width: 100%;
+}
+
+#header_bottom nav.on{
+    background-color: #fff;
+    border-bottom: 1px solid rgb(216, 216, 216);
 }
 
 #header_btm_in{
@@ -113,10 +126,62 @@
 
 #header_btm_in li{}
 
+
 #header_btm_in a{
     font-weight: 900;
     font-size: 18px;
     color: #fff;
+}
+
+#header_btm_in a.on{
+    color: #555;
+}
+
+#header_bottom .nav_menu{
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#header_bottom .nav_menu_in{
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+#header_bottom .nav_menu_in ul{
+}
+
+#header_bottom .nav_menu_in ul li{
+    margin-bottom: 20px;
+}   
+
+#header_bottom .nav_menu_in ul:nth-child(1){
+    width: 137px;
+}
+
+#header_bottom .nav_menu_in ul:nth-child(2){
+    width: 67px;
+}
+
+#header_bottom .nav_menu_in ul:nth-child(3){
+    width: 80px;
+}
+
+#header_bottom .nav_menu_in ul:nth-child(4){
+    width: 87px;
+}
+
+#header_bottom .nav_menu_in ul:nth-child(5){
+    width: 78px;
+}
+
+#header_bottom .nav_menu_in ul:nth-child(6){
+    width: 99px;
 }
 
 
@@ -212,39 +277,42 @@
 }
 
 #main_img_box div:nth-child(2){
-    background: url(../images/main_01_op.png) no-repeat 50% 0;
+    background: url(../images/main_02.png) no-repeat 50% 0;
     left: 100%;
     top: 0;
 }
 
 #main_img_box div:nth-child(3){
-    background: url(../images/main_01_op.png) no-repeat 50% 0;
+    background: url(../images/main_03.png) no-repeat 50% 0;
     left: 200%;
     top: 0;
 }
 
 #main_img_box div:nth-child(4){
-    background: url(../images/main_01_op.png) no-repeat 50% 0;
+    background: url(../images/main_04.png) no-repeat 50% 0;
     left: 300%;
     top: 0;
 }
 
 #main_img_box div:nth-child(5){
-    background: url(../images/main_01_op.png) no-repeat 50% 0;
+    background: url(../images/main_05.png) no-repeat 50% 0;
     left: 400%;
     top: 0;
+    opacity: 0.7;
 }
 
 #main_img_box div:nth-child(6){
-    background: url(../images/main_01_op.png) no-repeat 50% 0;
+    background: url(../images/main_06.png) no-repeat 50% 0;
     left: 500%;
     top: 0;
+    opacity: 0.7;
 }
 
 #main_img_box div:nth-child(7){
-    background: url(../images/main_01_op.png) no-repeat 50% 0;
+    background: url(../images/main_07.png) no-repeat 50% 0;
     left: 600%;
     top: 0;
+    opacity: 0.7;
 }
 
 #main_logo{
@@ -272,6 +340,10 @@
     height: 15px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+#main .img_btn li.on{
+    background-color: #F1BC87;
 }
 
 #booking_area{
@@ -365,6 +437,10 @@
     height: 500px;
 }
 
+#special_offer .no2{
+    display: none;
+}
+
 #special_offer .img_left{
     float: left;
     width: 50%;
@@ -423,6 +499,24 @@
     color: #fff;
     border-radius: 10px;
 }
+
+#special_offer .no2 .img_left{
+    background: url(../images/special_04.jpg) no-repeat 50% 0;
+    background-size: auto 100%;
+}
+
+#special_offer .no2 .img_top{
+    background: url(../images/special_05.jpg) no-repeat 50% 0;
+    background-size: 100% auto;
+}
+
+#special_offer .no2 .img_btm_left{
+    background: url(../images/special_06.jpg) no-repeat 50% 0;
+    background-size: auto 100%;
+}
+
+
+
 
 #special_offer .img_box_640{
     display: none;
@@ -499,7 +593,8 @@
 #dining .img_top{
     width: 100%;
     height: 50%;
-    background: url(../images/dining_02.png) no-repeat 50% 0;
+    background: url(../images/main_dinning03_img01.jpg) no-repeat 50% 0;
+    background-size: 100% auto;
 }
 
 #dining .box_bottom{
@@ -511,7 +606,8 @@
     float: left;
     width: 50%;
     height: 100%;
-    background: url(../images/dining_03.png) no-repeat 50% 0;
+    background: url(../images/main_dinning03_img02.jpg) no-repeat 50% 0;
+    background-size: auto 100%;
 }
 
 #dining .box_btm_right{
@@ -546,8 +642,38 @@
     float: right;
     width: 50%;
     height: 100%;
-    background: url(../images/dining_01.png) no-repeat 50% 0;
+    background: url(../images/main_dinning03_img03.jpg) no-repeat 50% 0;
+    background-size: auto 100%;
 }
+
+#dining .no2, #dining .no3, #dining .no4{
+    display: none;
+}
+
+
+#dining .no2 .img_top{
+    background: url(../images/main_dinning04_img02.jpg) no-repeat 50% 0;
+}
+
+#dining .no2 .img_btm_left{
+    background: url(../images/main_dinning04_img06.jpg) no-repeat 50% 50%;
+}
+
+#dining .no2 .img_right{
+    background: url(../images/main_dinning04_img05.jpg) no-repeat 50% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #dining .img_box_640{
@@ -658,6 +784,7 @@
 
 #rooms_in .right_box a.on{
     color: #fff;
+    text-decoration: underline;
 }
 
 
@@ -760,5 +887,9 @@
 }
 
 #footer_bottom .sns_box_640{
+    display: none;
+}
+
+#booking_640{
     display: none;
 }
