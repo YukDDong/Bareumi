@@ -50,6 +50,10 @@
     display: flex;
 }
 
+#header_top .info_box a:hover{
+    color: #F1BC87;
+}
+
 #header_top .info{
     display: flex;   
     align-items: center;
@@ -182,6 +186,10 @@
 
 #header_bottom .nav_menu_in ul:nth-child(6){
     width: 99px;
+}
+
+#header_bottom .nav_menu_in a:hover{
+    color: #F1BC87;
 }
 
 
@@ -416,6 +424,7 @@
     border: 1px solid #ccc;
     border-radius: 20px;
     display: flex;
+    overflow: hidden;
 }
 
 #special_offer .list_btn li{
@@ -424,6 +433,11 @@
     line-height: 40px;
     cursor: pointer;
     text-align: center;
+}
+
+#special_offer .list_btn li.click{
+    background-color: #393939;
+    color: #fff;
 }
 
 #special_offer .list_btn li:first-child{
@@ -562,6 +576,7 @@
     border: 1px solid #ccc;
     border-radius: 20px;
     display: flex;
+    overflow: hidden;
 }
 
 #dining .list_btn li{
@@ -571,6 +586,11 @@
     cursor: pointer;
     text-align: center;
     border-right: 1px solid #ccc;
+}
+
+#dining .list_btn li.click{
+    background-color: #393939;
+    color: #fff;
 }
 
 #dining .list_btn li:last-child{
@@ -858,7 +878,7 @@
     align-items: center;
     border-bottom: 1px solid rgba(200, 200, 200, 0.5);
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 0 10%;
 }
 
 #footer_bottom .info{
@@ -893,8 +913,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
     box-sizing: border-box;
+    padding: 0 10%;
 }
 
 #footer_bottom .footer_down address{

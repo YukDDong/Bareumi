@@ -1,23 +1,31 @@
 $(document).ready(function(){
     // header nav 풀다운효과
-    $('#header_bottom').on({
-        mouseover: function(){
+    let navMenu=false
+    $('#header_btm_in li').mouseenter(function(){
+        if(navMenu==false){
+            navMenu=true
             $('#header_booking').css({display: 'none'})
             $('#header').addClass('on')
             $('#header_bottom nav').addClass('on')
             $('#header_btm_in a').addClass('on')
-            $('#header_bottom .nav_menu').stop().animate({height: '200px'},1000)
-        },
-        mouseout: function(){
+            $('#header_bottom .nav_menu').stop().animate({height: '200px'},500)
+        }
+    })
+
+    $('#header_bottom').mouseleave(function(){
+        if(navMenu==true){
+            navMenu=false
             $('#header_booking').css({display: 'flex'})
             $('#header').removeClass('on')
             $('#header_bottom nav').removeClass('on')
             $('#header_btm_in a').removeClass('on')
-            $('#header_bottom .nav_menu').stop().animate({height: '0px'}, 1000)
+            $('#header_bottom .nav_menu').stop().animate({height: '0px'}, 300)
         }
     })
 
-    
+
+
+
 
 
 
@@ -50,7 +58,7 @@ $(document).ready(function(){
             };
 
             move(n);
-        }, 2000)};
+        }, 2500)};
 
     function move(i){
         if(i==mainImgCurrent){
@@ -96,22 +104,36 @@ $(document).ready(function(){
 
 
 
-    // special offer 버튼 클릭시 해당 div 나타남
+    // special offer, dining 버튼 클릭시 해당 div 나타남
+    // 상태값을 부여해서 같은 버튼 클릭시에는 동작하지 않게함
+    let listBtnIndex=0
+    $('#special_offer .list_btn li').eq(0).addClass('click')
     $('#special_offer .list_btn li').click(function(){
-        var listBtn=$(this).index()
-
-        $('#special_offer .img_box').css({display: 'none'})
-        $('#special_offer .img_box').eq(listBtn).stop().css({display: 'block', opacity: '0'}).animate({opacity: '1'},1000)
+        let listBtn=$(this).index()
+        if(listBtnIndex==listBtn){
+            return
+        }else{
+            $('#special_offer .list_btn li').removeClass('click')
+            $(this).addClass('click')
+            $('#special_offer .img_box').css({display: 'none'})
+            $('#special_offer .img_box').eq(listBtn).stop().css({display: 'block', opacity: '0'}).animate({opacity: '1'},1000)
+            listBtnIndex=listBtn
+        }
     })
 
-
-
-
+    let listBtnIndexDining=0
+    $('#dining .list_btn li').eq(0).addClass('click')
     $('#dining .list_btn li').click(function(){
-        var listBtnDining=$(this).index()
-
-        $('#dining .img_box').css({display: 'none'})
-        $('#dining .img_box').eq(listBtnDining).stop().css({display: 'block', opacity: '0'}).animate({opacity: '1'},1000)
+        let listBtnDining=$(this).index()
+        if(listBtnIndexDining==listBtnDining){
+            return
+        }else{
+            $('#dining .list_btn li').removeClass('click')
+            $(this).addClass('click')
+            $('#dining .img_box').css({display: 'none'})
+            $('#dining .img_box').eq(listBtnDining).stop().css({display: 'block', opacity: '0'}).animate({opacity: '1'},1000)
+            listBtnIndexDining=listBtnDining
+        }
     })
 
 

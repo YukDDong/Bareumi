@@ -115,6 +115,24 @@
     position: relative;
 }
 
+#special_offer .header{
+    margin-bottom: 4.6vw;
+    font-size: 6.25vw;
+}
+
+#special_offer .list_btn{
+    margin-bottom: 4.6vw;
+    width: 40vw;
+    height: 6.25vw;
+}
+
+#special_offer .list_btn li{
+    width: 50%;
+    height: 100%;
+    font-size: 3vw;
+    line-height: 6.25vw;
+}
+
 #special_offer .img_box{
     display: none;
 }
@@ -213,6 +231,24 @@
 #dining{
     height: 125vw;
     position: relative;
+}
+
+#dining .header{
+    margin-bottom: 4.6vw;
+    font-size: 6.25vw;
+}
+
+#dining .list_btn{
+    margin-bottom: 4.6vw;
+    width: 78vw;
+    height: 6.25vw;
+}
+
+#dining .list_btn li{
+    width: 25%;
+    height: 100%;
+    font-size: 3vw;
+    line-height: 6.25vw;
 }
 
 #dining .img_box{
