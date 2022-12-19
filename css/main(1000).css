@@ -57,14 +57,8 @@
 
 
 /* FOOTER */
-#footer_bottom .info{
-    width: 80%;
-}
+
 
 #footer_bottom .info li{
     margin-bottom: 10px;
-}
-
-#footer_bottom .sns_box{
-    width: 20%;
 }

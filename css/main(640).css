@@ -145,20 +145,25 @@
     overflow: hidden;
 }
 
+#special_offer .img_box_640.no2{
+    display: none;
+}
+
 #special_offer .img_box_640 .left_btn{
     position: absolute;
-    left: 15%;
-    top: 50%;
-    width: 15px;
-    height: 15px;
+    left: 10%;
+    top: 45%;
+    width: 4.6vw;
+    height: 4.6vw;
+    transform: rotate(180deg);
 }
 
 #special_offer .img_box_640 .right_btn{
     position: absolute;
-    right: 15%;
-    top: 50%;
-    width: 15px;
-    height: 15px;
+    right: 10%; 
+    top: 45%;
+    width: 4.6vw;
+    height: 4.6vw;
 }
 
 
@@ -196,6 +201,7 @@
 
 #special_offer .img_box_640 div>img{
     height: 100%;
+    width: auto;
 }
 
 #special_offer .text_box_640{
@@ -256,27 +262,32 @@
 }
 
 #dining .img_box_640{
-    display: block;
+    display: none;
     width: 100%;
     height: 50%;
     position: relative;
     overflow: hidden;
 }
 
+#dining .img_box_640.no1_640{
+    display: block;
+}
+
 #dining .img_box_640 .left_btn{
     position: absolute;
-    left: 15%;
-    top: 50%;
-    width: 15px;
-    height: 15px;
+    left: 10%;
+    top: 45%;
+    width: 4.6vw;
+    height: 4.6vw;
+    transform: rotate(180deg);
 }
 
 #dining .img_box_640 .right_btn{
     position: absolute;
-    right: 15%;
-    top: 50%;
-    width: 15px;
-    height: 15px;
+    right: 10%;
+    top: 45%;
+    width: 4.6vw;
+    height: 4.6vw;
 }
 
 
@@ -344,6 +355,7 @@
 /* ROOMS */
 #rooms{
     background-position: 80% 0;
+    height: auto;
 }
 
 #rooms_in{
@@ -356,6 +368,7 @@
 #rooms_in .left_box{
     float: none;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,6 +380,7 @@
 
 #rooms_in .room_info{
     align-items: center;
+    height: auto;
 }
 
 #rooms_in .room_info img{
@@ -380,7 +394,7 @@
 #rooms_in .right_box{
     width: 100%;
     height: auto;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 #rooms_in .right_box ul{
@@ -394,6 +408,11 @@
     width: 30%;
     text-align: center;
     margin-bottom: 30px;
+}
+
+#rooms_in .right_box a{
+    font-size: 6vw;
+    font-weight: 900;
 }
 
 
@@ -466,26 +485,27 @@
 
 #booking_640{
     width: 100%;
-    height: 60px;
+    height: auto;
     display: flex;
 }
 
 #booking_640 div{
     width: 50%;
-    height: 125px;
+    height: auto;
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px 60px;
+    justify-content: center;
+    padding: 20px 5vw;
     box-sizing: border-box;
-    font-size: 25px;
+    font-size: 5vw;
     font-weight: 800;
     cursor: pointer;
 }
 
 #booking_640 div img{
-    width: 50px;
+    width: 8vw;
+    margin-right: 4vw;
 }
 
 #booking_640 .rooms_bk{

@@ -50,3 +50,28 @@
 }
 
 
+
+/* FOOTER */
+#footer_bottom .footer_up{
+    padding: 0 5%;
+}
+
+#footer_bottom .info{
+    width: 70%;
+}
+
+#footer_bottom .info li{
+    margin-bottom: 10px;
+}
+
+#footer_bottom .sns_box{
+}
+
+#footer_bottom .sns_box img{
+    display: inline-block;
+    width: 35px;
+}
+
+#footer_bottom .sns_box img:last-child{
+    margin-right: 0;
+}

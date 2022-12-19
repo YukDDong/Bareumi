@@ -1,10 +1,11 @@
+
+
 $(document).ready(function(){
     // header nav 풀다운효과
     let navMenu=false
     $('#header_btm_in li').mouseenter(function(){
         if(navMenu==false){
             navMenu=true
-            $('#header_booking').css({display: 'none'})
             $('#header').addClass('on')
             $('#header_bottom nav').addClass('on')
             $('#header_btm_in a').addClass('on')
@@ -15,13 +16,16 @@ $(document).ready(function(){
     $('#header_bottom').mouseleave(function(){
         if(navMenu==true){
             navMenu=false
-            $('#header_booking').css({display: 'flex'})
             $('#header').removeClass('on')
             $('#header_bottom nav').removeClass('on')
             $('#header_btm_in a').removeClass('on')
             $('#header_bottom .nav_menu').stop().animate({height: '0px'}, 300)
         }
     })
+
+
+
+
 
 
 
@@ -98,6 +102,30 @@ $(document).ready(function(){
 
 
 
+    // 메인 booking 입실,퇴실버튼 클릭시 캘린더
+    $( "#sdate,#edate" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        showMonthAfterYear: true,
+        dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+        dateFormat:'yy-mm-dd',
+    });
+    $('#sdate').datepicker("option", "maxDate", $("#edate").val());
+    $('#sdate').datepicker("option", "onClose", function (selectedDate){
+        $("#edate").datepicker( "option", "minDate", selectedDate );
+    });
+    $('#edate').datepicker();
+    $('#edate').datepicker("option", "minDate", $("#sdate").val());
+    $('#edate').datepicker("option", "onClose", function (selectedDate){
+        $("#sdate").datepicker( "option", "maxDate", selectedDate );
+    });
+    $('#sdate').datepicker("setDate", "today")
+    $('#edate').datepicker("setDate", "1D")
+
+
+
+
+
 
 
 
@@ -106,6 +134,7 @@ $(document).ready(function(){
 
     // special offer, dining 버튼 클릭시 해당 div 나타남
     // 상태값을 부여해서 같은 버튼 클릭시에는 동작하지 않게함
+    let bw=$('body').innerWidth();
     let listBtnIndex=0
     $('#special_offer .list_btn li').eq(0).addClass('click')
     $('#special_offer .list_btn li').click(function(){
@@ -115,9 +144,15 @@ $(document).ready(function(){
         }else{
             $('#special_offer .list_btn li').removeClass('click')
             $(this).addClass('click')
-            $('#special_offer .img_box').css({display: 'none'})
-            $('#special_offer .img_box').eq(listBtn).stop().css({display: 'block', opacity: '0'}).animate({opacity: '1'},1000)
-            listBtnIndex=listBtn
+            if(bw>640){
+                $('#special_offer .img_box').css({display: 'none'})
+                $('#special_offer .img_box').eq(listBtn).stop().css({display: 'block', opacity: '0'}).animate({opacity: '1'},1000)
+                listBtnIndex=listBtn
+            }else{
+                $('#special_offer .img_box_640').css({display: 'none'})
+                $('#special_offer .img_box_640').eq(listBtn).stop().css({display: 'block', opacity: '0'}).animate({opacity: '1'},1000)
+                listBtnIndex=listBtn
+            }
         }
     })
 
@@ -130,9 +165,16 @@ $(document).ready(function(){
         }else{
             $('#dining .list_btn li').removeClass('click')
             $(this).addClass('click')
-            $('#dining .img_box').css({display: 'none'})
-            $('#dining .img_box').eq(listBtnDining).stop().css({display: 'block', opacity: '0'}).animate({opacity: '1'},1000)
-            listBtnIndexDining=listBtnDining
+            if(bw>640){
+                $('#dining .img_box').css({display: 'none'})
+                $('#dining .img_box').eq(listBtnDining).stop().css({display: 'block', opacity: '0'}).animate({opacity: '1'},1000)
+                listBtnIndexDining=listBtnDining
+            }else{
+                $('#dining .img_box_640').css({display: 'none'})
+                $('#dining .img_box_640').eq(listBtnDining).stop().css({display: 'block', opacity: '0'}).animate({opacity: '1'},1000)
+                listBtnIndexDining=listBtnDining
+            }
+            
         }
     })
 

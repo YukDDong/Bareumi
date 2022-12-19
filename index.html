@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bareumi</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width : 1300px)" href="./css/main(1300).css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width : 1000px)" href="./css/main(1000).css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width : 640px)" href="./css/main(640).css">
     <script src="./js/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./js/main.js"></script>
 
     
@@ -25,21 +27,21 @@
                 <a href="./index.html" class="logo"><img src="./images/logo.png" alt="header_logo"></a>
                 <div class="info_box">
                     <ul class="info">
-                        <li><a href="">LOGIN</a></li>
-                        <li><a href="">JOIN</a></li>
-                        <li><a href="">예약확인</a></li>
-                        <li><a href="">고객센터</a></li>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">JOIN</a></li>
+                        <li><a href="#">예약확인</a></li>
+                        <li><a href="#">고객센터</a></li>
                     </ul>
                     <ul class="language">
-                        <li><a href="">KOR</a></li>
-                        <li><a href="">ENG</a></li>
+                        <li><a href="#">KOR</a></li>
+                        <li><a href="#">ENG</a></li>
                     </ul>
                 </div>
             </div>
             <div id="header_bottom">
                 <nav>
                     <ul id="header_btm_in">
-                        <li><a href="#">SPECIAL OFFER</a></li>
+                        <li><a href="./specialoffer.html">SPECIAL OFFER</a></li>
                         <li><a href="#">ROOMS</a></li>
                         <li><a href="#">DINING</a></li>
                         <li><a href="#">BANQUET</a></li>
@@ -124,12 +126,51 @@
                 <li></li>
             </ul>
             <ul id="booking_area">
-                <li class="top">입실</li>
-                <li class="top">퇴실</li>
-                <li class="middle">객실수</li>
-                <li class="middle">성인</li>
-                <li class="middle">아동</li>
-                <li class="bottom">기업체 코드</li>
+                <li class="top">
+                    <input type="text" name="sdate" id="sdate" value="입실">
+                </li>
+                <li class="top">
+                    <input type="text" name="edate" id="edate" value="퇴실">
+                </li>
+                <li class="middle">
+                    <select>
+                        <option value="객실수">객실수</option>
+                        <option value="객실수1">객실수1</option>
+                        <option value="객실수2">객실수2</option>
+                        <option value="객실수3">객실수3</option>
+                        <option value="객실수4">객실수4</option>
+                        <option value="객실수5">객실수5</option>
+                        <option value="객실수6">객실수6</option>
+                        <option value="객실수7">객실수7</option>
+                    </select>
+                </li>
+                <li class="middle">
+                    <select>
+                        <option value="성인">성인</option>
+                        <option value="성인1">성인1</option>
+                        <option value="성인2">성인2</option>
+                        <option value="성인3">성인3</option>
+                        <option value="성인4">성인4</option>
+                        <option value="성인5">성인5</option>
+                        <option value="성인6">성인6</option>
+                        <option value="성인7">성인7</option>
+                    </select>
+                </li>
+                <li class="middle">
+                    <select>
+                        <option value="아동">아동</option>
+                        <option value="아동1">아동1</option>
+                        <option value="아동2">아동2</option>
+                        <option value="아동3">아동3</option>
+                        <option value="아동4">아동4</option>
+                        <option value="아동5">아동5</option>
+                        <option value="아동6">아동6</option>
+                        <option value="아동7">아동7</option>
+                    </select>
+                </li>
+                <li class="bottom">
+                    <input type="text" placeholder="기업체 코드">
+                </li>
                 <li class="bottom">SEARCH</li>
             </ul>
         </section>
@@ -143,8 +184,8 @@
         <section id="special_offer">
             <h4 class="header">SPECIAL OFFER</h4>
             <ul class="list_btn">
-                <li>이벤트</li>
-                <li>패키지</li>
+                <li class="event">이벤트</li>
+                <li class="">패키지</li>
             </ul>
             <div class="img_box_total">
                 <div class="img_box no1">
@@ -159,7 +200,7 @@
                                     다양한 이벤트와 패키지를<br>
                                     만나보세요!
                                 </p>
-                                <a href="#" class="plus_btn">더보기</a>
+                                <a href="./specialoffer.html" class="plus_btn">더보기</a>
                             </div>
                         </div>
                     </div>
@@ -176,18 +217,25 @@
                                     다양한 이벤트와 패키지를<br>
                                     만나보세요!
                                 </p>
-                                <a href="#" class="plus_btn">더보기</a>
+                                <a href="./specialoffer.html" class="plus_btn">더보기</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="img_box_640">
-                <div class="left_btn">L</div>
-                <div class="right_btn">R</div>
+            <div class="img_box_640 no1">
+                <img class="left_btn" src="./images/left_btn.png"/>
+                <img class="right_btn" src="./images/left_btn.png"/>
                 <div class="img_no1"><img src="./images/special_01.png" alt=""></div>
                 <div class="img_no2"><img src="./images/special_02.png" alt=""></div>
                 <div class="img_no3"><img src="./images/special_03.png" alt=""></div>
+            </div>
+            <div class="img_box_640 no2">
+                <img class="left_btn" src="./images/left_btn.png"/>
+                <img class="right_btn" src="./images/left_btn.png"/>
+                <div class="img_no1"><img src="./images/special_04.jpg" alt=""></div>
+                <div class="img_no2"><img src="./images/special_05.jpg" alt=""></div>
+                <div class="img_no3"><img src="./images/special_06.jpg" alt=""></div>
             </div>
             <div class="text_box_640">
                 <p>
@@ -284,12 +332,33 @@
                     <div class="img_right"></div>
                 </div>
             </div>
-            <div class="img_box_640">
-                <div class="left_btn">L</div>
-                <div class="right_btn">R</div>
+            <div class="img_box_640 no1_640">
+                <img class="left_btn" src="./images/left_btn.png"/>
+                <img class="right_btn" src="./images/left_btn.png"/>
                 <div class="img_no1"><img src="./images/dining_buffet_01.jpg" alt=""></div>
                 <div class="img_no2"><img src="./images/dining_buffet_02.jpg" alt=""></div>
                 <div class="img_no3"><img src="./images/dining_buffet_03.jpg" alt=""></div>
+            </div>
+            <div class="img_box_640 no2_640">
+                <img class="left_btn" src="./images/left_btn.png"/>
+                <img class="right_btn" src="./images/left_btn.png"/>
+                <div class="img_no1"><img src="./images/main_dinning04_img02.jpg" alt=""></div>
+                <div class="img_no2"><img src="./images/main_dinning04_img06.jpg" alt=""></div>
+                <div class="img_no3"><img src="./images/main_dinning04_img05.jpg" alt=""></div>
+            </div>
+            <div class="img_box_640 no3_640">
+                <img class="left_btn" src="./images/left_btn.png"/>
+                <img class="right_btn" src="./images/left_btn.png"/>
+                <div class="img_no1"><img src="./images/dining_cafe_01.jpg" alt=""></div>
+                <div class="img_no2"><img src="./images/dining_cafe_02.jpg" alt=""></div>
+                <div class="img_no3"><img src="./images/dining_cafe_03.jpg" alt=""></div>
+            </div>
+            <div class="img_box_640 no4_640">
+                <img class="left_btn" src="./images/left_btn.png"/>
+                <img class="right_btn" src="./images/left_btn.png"/>
+                <div class="img_no1"><img src="./images/dining_store_01.jpg" alt=""></div>
+                <div class="img_no2"><img src="./images/dining_store_02.jpg" alt=""></div>
+                <div class="img_no3"><img src="./images/dining_store_03.jpg" alt=""></div>
             </div>
             <div class="text_box_640">
                 <p>
@@ -408,8 +477,10 @@
                         <li><a href="">채용정보</a></li>
                     </ul>
                     <div class="sns_box">
-                        <img src="./images/logo_facebook.png" alt="logo_facebook">
-                        <img src="./images/logo_insta.png" alt="logo_insta">
+                        <img src="./images/facebook.png" alt="logo_facebook">
+                        <img src="./images/instagram.png" alt="logo_insta">
+                        <img src="./images/kakao-talk.png" alt="logo_kakao">
+                        <img src="./images/line.png" alt="logo_line">
                     </div>
                 </div>
                 <div class="footer_down">
